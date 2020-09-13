@@ -28,6 +28,8 @@
 		86DC2CF72508C5A50068933B /* demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2CF62508C5A50068933B /* demoTests.swift */; };
 		86DC2D022508C5A50068933B /* demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D012508C5A50068933B /* demoUITests.swift */; };
 		86DC2D0E2508C5D50068933B /* CSBNetWorkCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DC2C452505B69C0068933B /* CSBNetWorkCapture.framework */; };
+		86DC2D10250C57440068933B /* CBSNotTouchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D0F250C57440068933B /* CBSNotTouchedView.swift */; };
+		86DC2D12250C67120068933B /* CBSNotTouchedWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D11250C67120068933B /* CBSNotTouchedWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		86DC2CFD2508C5A50068933B /* demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DC2D012508C5A50068933B /* demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoUITests.swift; sourceTree = "<group>"; };
 		86DC2D032508C5A50068933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86DC2D0F250C57440068933B /* CBSNotTouchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBSNotTouchedView.swift; sourceTree = "<group>"; };
+		86DC2D11250C67120068933B /* CBSNotTouchedWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBSNotTouchedWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 				86DC2C702505C6250068933B /* CSBCaptureDetailTabBarController.swift */,
 				86DC2C722505D3D20068933B /* CBSHttpModel.swift */,
 				86DC2C742505D7180068933B /* CBSHelper.swift */,
+				86DC2D0F250C57440068933B /* CBSNotTouchedView.swift */,
+				86DC2D11250C67120068933B /* CBSNotTouchedWindow.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -435,6 +441,8 @@
 			files = (
 				86DC2C6F2505C5880068933B /* CSBCaptureRequestsListViewController.swift in Sources */,
 				86DC2C672505B9BA0068933B /* CSBCaptureMainViewController.swift in Sources */,
+				86DC2D10250C57440068933B /* CBSNotTouchedView.swift in Sources */,
+				86DC2D12250C67120068933B /* CBSNotTouchedWindow.swift in Sources */,
 				86DC2C752505D7180068933B /* CBSHelper.swift in Sources */,
 				86DC2C712505C6250068933B /* CSBCaptureDetailTabBarController.swift in Sources */,
 				86DC2C622505B86A0068933B /* CSBCapture.swift in Sources */,

@@ -9,14 +9,16 @@
 import UIKit
 
 class CSBCaptureMainViewController: UIViewController {
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var containerHeaderView: UIView!
     @IBOutlet weak var containerViewTop: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+//        containerHeaderView.backgroundColor = UIColor.hex(string: "1BA9FF", alpha: 1)
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(CSBCaptureMainViewController.didSwipeOnView(_:)))
-        containerView.addGestureRecognizer(panGesture)
+        containerHeaderView.addGestureRecognizer(panGesture)
         
         // Do any additional setup after loading the view.
     }
@@ -29,7 +31,7 @@ class CSBCaptureMainViewController: UIViewController {
     
     @objc func didSwipeOnView(_ gestureRecognizer: UIPanGestureRecognizer) {
         let moveY = gestureRecognizer.translation(in:self.view).y
-        if case .Down = gestureRecognizer.verticalDirection(target: containerView) {
+        if case .Down = gestureRecognizer.verticalDirection(target: containerHeaderView) {
             if containerViewTop.constant >= UIScreen.main.bounds.height - 50.0 {
                 return
             }

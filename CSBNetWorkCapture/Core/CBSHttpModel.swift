@@ -8,6 +8,30 @@
 
 import UIKit
 
+class CBSHttpModelManager: NSObject {
+    static let shared = CBSHttpModelManager()
+    private var models = [CBSHttpModel]()
+    private let syncQueue = DispatchQueue(label: "CSBSyncQueue")
+    
+    func add(_ obj: CBSHttpModel) {
+        syncQueue.async {
+            self.models.insert(obj, at: 0)
+            NotificationCenter.default.post(name: NSNotification.Name.CBSAddHttpModel, object: nil)
+        }
+    }
+    
+    func clear() {
+        syncQueue.async {
+            self.models.removeAll()
+            NotificationCenter.default.post(name: NSNotification.Name.CBSClearHttpModels, object: nil)
+        }
+    }
+    
+    func getModels() -> [CBSHttpModel] {
+        return models
+    }
+}
+
 class CBSHttpModel: NSObject {
     var requestURL: String?
     var requestURLComponents: URLComponents?
@@ -51,10 +75,6 @@ class CBSHttpModel: NSObject {
             self.requestBodyLength = bodyData.count
         }
         self.requestBodyData = request.httpBody
-    }
-    
-    func setRequestBodyDataInfo(_ request: URLRequest) {
-        
     }
     
     func setResponseInfo(_ response: URLResponse, data: Data, error: Error?)

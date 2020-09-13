@@ -9,7 +9,49 @@
 import UIKit
 
 class CSBCaptureRequestsCell: UITableViewCell {
-
+    @IBOutlet weak var requestNoLabel: UILabel!
+    @IBOutlet weak var requestTimeLabel: UILabel!
+    @IBOutlet weak var progressTimeLabel: UILabel!
+    @IBOutlet weak var requestUrlLanel: UILabel!
+    @IBOutlet weak var requestMethodLabel: UILabel!
+    @IBOutlet weak var requestContentTypeLabel: UILabel!
+    
+    var requestNo: String? {
+        didSet {
+            requestNoLabel.text = requestNo
+        }
+    }
+    
+    var requestTime: String? {
+        didSet {
+            requestTimeLabel.text = requestTime
+        }
+    }
+   
+    var progressTime: String? {
+        didSet {
+            progressTimeLabel.text = progressTime
+        }
+    }
+    
+    var requestUrl: String? {
+        didSet {
+            requestUrlLanel.text = requestUrl
+        }
+    }
+    
+    var requestMethod: String? {
+        didSet {
+            requestMethodLabel.text = requestMethod
+        }
+    }
+    
+    var requestContentType: String? {
+        didSet {
+            requestContentTypeLabel.text = requestContentType
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

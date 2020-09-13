@@ -10,11 +10,9 @@ import UIKit
 
 class CSBCaptureProtocol: URLProtocol {
     private static let cbsInternalKey = "CSBCaptureProtocolInternalKey"
-    
     private lazy var session: URLSession = { [unowned self] in
         return URLSession(configuration: .default, delegate: self, delegateQueue: nil)
         }()
-    
     
     private let cbsHttpModel = CBSHttpModel()
     private var response: URLResponse?
@@ -35,23 +33,7 @@ class CSBCaptureProtocol: URLProtocol {
         let mutableRequest = (request as NSURLRequest).mutableCopy() as! NSMutableURLRequest
         URLProtocol.setProperty(true, forKey: CSBCaptureProtocol.cbsInternalKey, in: mutableRequest)
         
-        session.dataTask(with: mutableRequest as URLRequest) { (data, response, error) -> Void in
-            //            // 問題があったら調整
-            //            if let err = error{
-            //                self.client?.urlProtocol(self, didFailWithError: err)
-            //                return
-            //            }
-            //
-            //            if let res = response {
-            //                self.client?.urlProtocol(self, didReceive: res, cacheStoragePolicy: URLCache.StoragePolicy.allowed)
-            //            }
-            //
-            //            if let loadData = data {
-            //                self.client?.urlProtocol(self, didLoad: loadData)
-            //            }
-            //
-            //            self.client?.urlProtocolDidFinishLoading(self)
-            }.resume()
+        session.dataTask(with: mutableRequest as URLRequest).resume()
     }
     
     override open func stopLoading() {
@@ -66,7 +48,6 @@ class CSBCaptureProtocol: URLProtocol {
     open override class func canonicalRequest(for request: URLRequest) -> URLRequest {
         return request
     }
-    
     
     private class func canServeRequest(_ request: URLRequest) -> Bool
     {
@@ -106,6 +87,8 @@ extension CSBCaptureProtocol: URLSessionDataDelegate {
             let data = (self.responseData ?? NSMutableData()) as Data
             cbsHttpModel.setResponseInfo(response, data: data, error: error)
         }
+        
+        CBSHttpModelManager.shared.add(cbsHttpModel)
     }
     
     public func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {

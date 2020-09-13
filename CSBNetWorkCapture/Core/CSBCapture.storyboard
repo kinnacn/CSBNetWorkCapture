@@ -13,28 +13,40 @@
         <scene sceneID="eoB-Qz-NlQ">
             <objects>
                 <viewController storyboardIdentifier="CSBCaptureMainViewController" id="ZMm-dk-ZAJ" customClass="CSBCaptureMainViewController" customModule="CSBNetWorkCapture" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ghe-n2-AxS">
+                    <view key="view" contentMode="scaleToFill" id="ghe-n2-AxS" customClass="CBSNotTouchedView" customModule="CSBNetWorkCapture" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-Br-cvK">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-Br-cvK" customClass="CBSNotTouchedView" customModule="CSBNetWorkCapture" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scx-3f-68O">
-                                        <rect key="frame" x="0.0" y="400" width="375" height="267"/>
+                                        <rect key="frame" x="0.0" y="220" width="375" height="447"/>
                                         <connections>
                                             <segue destination="qGG-aa-kd1" kind="embed" id="t27-hD-bR9"/>
                                         </connections>
                                     </containerView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ra1-Xa-NEu">
+                                        <rect key="frame" x="0.0" y="200" width="375" height="20"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="LpU-AJ-5TV"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ra1-Xa-NEu" secondAttribute="trailing" id="8yP-90-sGm"/>
                                     <constraint firstItem="Scx-3f-68O" firstAttribute="leading" secondItem="vm8-Br-cvK" secondAttribute="leading" id="PmY-oz-NY3"/>
-                                    <constraint firstItem="Scx-3f-68O" firstAttribute="top" secondItem="vm8-Br-cvK" secondAttribute="top" priority="999" constant="400" id="R0O-6b-5bP"/>
+                                    <constraint firstItem="ra1-Xa-NEu" firstAttribute="leading" secondItem="vm8-Br-cvK" secondAttribute="leading" id="PoQ-JV-Lkd"/>
+                                    <constraint firstItem="ra1-Xa-NEu" firstAttribute="top" secondItem="vm8-Br-cvK" secondAttribute="top" priority="999" constant="200" id="e3n-2T-SA9"/>
                                     <constraint firstAttribute="trailing" secondItem="Scx-3f-68O" secondAttribute="trailing" id="gIe-Mj-Rxg"/>
                                     <constraint firstAttribute="bottom" secondItem="Scx-3f-68O" secondAttribute="bottom" id="ul9-um-FA8"/>
+                                    <constraint firstItem="Scx-3f-68O" firstAttribute="top" secondItem="ra1-Xa-NEu" secondAttribute="bottom" id="ydh-IL-ubR"/>
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vm8-Br-cvK" firstAttribute="leading" secondItem="2We-ym-ktG" secondAttribute="leading" id="PmI-xg-WyH"/>
                             <constraint firstItem="vm8-Br-cvK" firstAttribute="top" secondItem="ghe-n2-AxS" secondAttribute="top" id="g3A-90-Z4Z"/>
@@ -44,8 +56,8 @@
                         <viewLayoutGuide key="safeArea" id="2We-ym-ktG"/>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="Scx-3f-68O" id="z3C-Zp-aEr"/>
-                        <outlet property="containerViewTop" destination="R0O-6b-5bP" id="N8S-0a-Nvu"/>
+                        <outlet property="containerHeaderView" destination="ra1-Xa-NEu" id="k0k-nI-KS4"/>
+                        <outlet property="containerViewTop" destination="e3n-2T-SA9" id="RPe-R9-oeO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78i-MP-Erw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,11 +69,11 @@
             <objects>
                 <viewController storyboardIdentifier="CSBCaptureRequestsListViewController" id="GTH-th-rtk" customClass="CSBCaptureRequestsListViewController" customModule="CSBNetWorkCapture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bv-DX-yhl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W5E-Qd-CWY">
-                                <rect key="frame" x="0.0" y="44" width="375" height="223"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="403"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="GTH-th-rtk" id="YQJ-YX-E6p"/>
@@ -80,7 +92,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="iCO-Lk-HMm"/>
                     <connections>
-                        <outlet property="RequestsListTableView" destination="W5E-Qd-CWY" id="xip-y7-o7u"/>
+                        <outlet property="requestsListTableView" destination="W5E-Qd-CWY" id="wHx-I1-Hfw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="So9-6w-qxB" userLabel="First Responder" sceneMemberID="firstResponder"/>

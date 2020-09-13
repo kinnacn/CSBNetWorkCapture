@@ -8,8 +8,55 @@
 
 import Foundation
 
-extension UIPanGestureRecognizer {
+extension URLSessionConfiguration {
+    // .defaultをモック用と入れ替えるメソッド
+    public class func setupCSBCaptureDefaultSessionConfiguration() {
+        let defaultSessionConfiguration = class_getClassMethod(URLSessionConfiguration.self, #selector(getter: URLSessionConfiguration.default))
+        let swizzledDefaultSessionConfiguration = class_getClassMethod(URLSessionConfiguration.self, #selector(getter: URLSessionConfiguration.cbsCaptureDefaultSessionConfiguration))
+        method_exchangeImplementations(defaultSessionConfiguration!, swizzledDefaultSessionConfiguration!)
+    }
     
+    public class func releseCSBCaptureDefaultSessionConfiguration() {
+        let defaultSessionConfiguration = class_getClassMethod(URLSessionConfiguration.self, #selector(getter: URLSessionConfiguration.default))
+        let swizzledDefaultSessionConfiguration = class_getClassMethod(URLSessionConfiguration.self, #selector(getter: URLSessionConfiguration.cbsCaptureDefaultSessionConfiguration))
+        method_exchangeImplementations(swizzledDefaultSessionConfiguration!, defaultSessionConfiguration!)
+    }
+    // .defaultと入れ替えるプロパティ変数
+    @objc private dynamic class var cbsCaptureDefaultSessionConfiguration: URLSessionConfiguration {
+        let configuration = self.cbsCaptureDefaultSessionConfiguration
+        configuration.protocolClasses?.insert(CSBCaptureProtocol.self, at: 0)
+//         URLProtocol.registerClass(CSBCaptureProtocol.self)
+        return configuration
+    }
+}
+
+extension NSNotification.Name {
+//    static let NFXReloadData = Notification.Name("NFXReloadData")
+    static let CBSAddHttpModel = Notification.Name("CBSAddHttpModel")
+    static let CBSClearHttpModels = Notification.Name("CBSClearHttpModels")
+}
+
+extension UIColor {
+    class func rgba(red: Int, green: Int, blue: Int, alpha: CGFloat) -> UIColor{
+        return UIColor(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alpha)
+    }
+    
+    class func hex ( string : String, alpha : CGFloat) -> UIColor {
+        let string_ = string.replacingOccurrences(of: "#", with: "")
+        let scanner = Scanner(string: string_ as String)
+        var color: UInt32 = 0
+        if scanner.scanHexInt32(&color) {
+            let r = CGFloat((color & 0xFF0000) >> 16) / 255.0
+            let g = CGFloat((color & 0x00FF00) >> 8) / 255.0
+            let b = CGFloat(color & 0x0000FF) / 255.0
+            return UIColor(red:r,green:g,blue:b,alpha:alpha)
+        } else {
+            return UIColor.white;
+        }
+    }
+}
+
+extension UIPanGestureRecognizer {
     enum GestureDirection {
         case Up
         case Down
