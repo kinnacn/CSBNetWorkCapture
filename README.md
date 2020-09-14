@@ -4,6 +4,9 @@ A tool for simply checking communication logs in real time
 ## Features
 - json, xml, image (jpg, png) parser 
 
+## limitation
+- Only supports vertical screen
+
 ## Requirements
 - Xcode 9.0/swift4.0
 
