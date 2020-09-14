@@ -2,7 +2,7 @@
 A tool for simply checking communication logs in real time
 
 ## Features
-- json, xml, image (jpg, png) parser 
+- json, xml, image (jpg, png) data for response
 
 ## limitation
 - Only supports vertical screen
