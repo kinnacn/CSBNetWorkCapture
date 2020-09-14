@@ -8,6 +8,27 @@
 
 import Foundation
 
+extension InputStream {
+    func readfullyData() -> Data {
+        var result = Data()
+        var buffer = [UInt8](repeating: 0, count: 4096)
+        
+        open()
+        
+        var amount = 0
+        repeat {
+            amount = read(&buffer, maxLength: buffer.count)
+            if amount > 0 {
+                result.append(buffer, count: amount)
+            }
+        } while amount > 0
+        
+        close()
+        
+        return result
+    }
+}
+
 extension URLSessionConfiguration {
     // .defaultをモック用と入れ替えるメソッド
     public class func setupCSBCaptureDefaultSessionConfiguration() {
@@ -37,6 +58,10 @@ extension NSNotification.Name {
 }
 
 extension UIColor {
+    static let csbRed = hex(string: "C26381", alpha: 1.0)
+    static let csbGreen = hex(string: "71C275", alpha: 1.0)
+    static let csbBackground = hex(string: "FAFFF2", alpha: 1.0)
+    
     class func rgba(red: Int, green: Int, blue: Int, alpha: CGFloat) -> UIColor{
         return UIColor(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alpha)
     }

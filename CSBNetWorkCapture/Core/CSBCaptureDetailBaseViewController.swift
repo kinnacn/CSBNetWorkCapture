@@ -1,26 +1,19 @@
 //
-//  CSBCaptureDetailTabBarController.swift
+//  CSBCaptureDetailBaseControllerViewController.swift
 //  CSBNetWorkCapture
 //
-//  Created by seibin on 2020/09/07.
+//  Created by seibin on 2020/09/13.
 //  Copyright © 2020年 seibin. All rights reserved.
 //
 
 import UIKit
 
-class CSBCaptureDetailTabBarController: UITabBarController {
+class CSBCaptureDetailBaseViewController: UIViewController {
     var cbsHttpModel: CSBHttpModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let childs = viewControllers {
-            for child in childs {
-                (child as? CSBCaptureDetailBaseViewController)?.cbsHttpModel = cbsHttpModel
-                _ = (child as? CSBCaptureDetailBaseViewController)?.view
-            }
-        }
-        
         // Do any additional setup after loading the view.
     }
 
@@ -29,10 +22,7 @@ class CSBCaptureDetailTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-    //ボタン押下時の呼び出しメソッド
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-    }
-    
+
     /*
     // MARK: - Navigation
 

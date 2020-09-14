@@ -14,7 +14,7 @@ class CSBCaptureProtocol: URLProtocol {
         return URLSession(configuration: .default, delegate: self, delegateQueue: nil)
         }()
     
-    private let cbsHttpModel = CBSHttpModel()
+    private let cbsHttpModel = CSBHttpModel()
     private var response: URLResponse?
     private var responseData: NSMutableData?
     
@@ -88,7 +88,7 @@ extension CSBCaptureProtocol: URLSessionDataDelegate {
             cbsHttpModel.setResponseInfo(response, data: data, error: error)
         }
         
-        CBSHttpModelManager.shared.add(cbsHttpModel)
+        CSBHttpModelManager.shared.add(cbsHttpModel)
     }
     
     public func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {

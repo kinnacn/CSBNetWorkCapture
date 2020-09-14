@@ -11,7 +11,7 @@ import UIKit
 class CSBCaptureRequestsListViewController: UIViewController {
     @IBOutlet weak var requestsListTableView: UITableView!
     
-    private var models = [CBSHttpModel]()
+    private var cbsHttpModels = [CSBHttpModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class CSBCaptureRequestsListViewController: UIViewController {
     }
     
     @objc func addModel(notification: NSNotification?) {
-        models = CBSHttpModelManager.shared.getModels()
+        cbsHttpModels = CSBHttpModelManager.shared.getModels()
 //        print(models)
         DispatchQueue.main.async {
             self.requestsListTableView.reloadData()
@@ -49,19 +49,23 @@ class CSBCaptureRequestsListViewController: UIViewController {
 extension CSBCaptureRequestsListViewController: UITableViewDataSource, UITableViewDelegate {
     // UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        return cbsHttpModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CSBCaptureRequestsCell.className) as! CSBCaptureRequestsCell
-        let model = models[indexPath.row]
+        let model = cbsHttpModels[indexPath.row]
         
-        cell.requestNo = String(models.count - indexPath.row)
+        cell.requestNo = String(cbsHttpModels.count - indexPath.row)
         cell.requestTime = model.requestTime
         cell.progressTime =  String(format: "%.2f", model.progressTimeInterval ?? 0)
         cell.requestUrl = model.requestURL
         cell.requestMethod = model.requestMethod
         cell.requestContentType = model.requestType
+        
+        if let status = model.responseStatus {
+            cell.isSuccess = status == 200 ? true: false
+        }
         
         return cell
     }
@@ -70,7 +74,7 @@ extension CSBCaptureRequestsListViewController: UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let csbCaptureStoryboard = UIStoryboard(name: "CSBCapture", bundle: Bundle(for: CSBCaptureDetailTabBarController.self))
         let csbCaptureDetailTabBarController = csbCaptureStoryboard.instantiateViewController(withIdentifier: CSBCaptureDetailTabBarController.className) as! CSBCaptureDetailTabBarController
-        
+        csbCaptureDetailTabBarController.cbsHttpModel = cbsHttpModels[indexPath.row]
         navigationController?.pushViewController(csbCaptureDetailTabBarController, animated: true)
     }
 }

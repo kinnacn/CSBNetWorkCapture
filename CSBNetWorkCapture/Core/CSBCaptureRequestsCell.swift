@@ -9,12 +9,23 @@
 import UIKit
 
 class CSBCaptureRequestsCell: UITableViewCell {
+    @IBOutlet weak var resultInfoContentView: UIView!
     @IBOutlet weak var requestNoLabel: UILabel!
     @IBOutlet weak var requestTimeLabel: UILabel!
     @IBOutlet weak var progressTimeLabel: UILabel!
     @IBOutlet weak var requestUrlLanel: UILabel!
     @IBOutlet weak var requestMethodLabel: UILabel!
     @IBOutlet weak var requestContentTypeLabel: UILabel!
+    
+    var isSuccess: Bool = false {
+        didSet {
+            if isSuccess {
+                resultInfoContentView.backgroundColor = UIColor.csbGreen
+            } else {
+                resultInfoContentView.backgroundColor = UIColor.csbRed
+            }
+        }
+    }
     
     var requestNo: String? {
         didSet {
@@ -55,6 +66,7 @@ class CSBCaptureRequestsCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        isSuccess = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

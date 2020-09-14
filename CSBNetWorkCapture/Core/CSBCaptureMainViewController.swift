@@ -36,7 +36,7 @@ class CSBCaptureMainViewController: UIViewController {
                 return
             }
         } else {
-            if containerViewTop.constant <= 100.0 {
+            if containerViewTop.constant <= 50.0 {
                 return
             }
         }

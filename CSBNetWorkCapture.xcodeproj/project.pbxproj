@@ -18,8 +18,8 @@
 		86DC2C6B2505BC700068933B /* CSBCaptureRequestsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86DC2C692505BC700068933B /* CSBCaptureRequestsCell.xib */; };
 		86DC2C6F2505C5880068933B /* CSBCaptureRequestsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2C6E2505C5880068933B /* CSBCaptureRequestsListViewController.swift */; };
 		86DC2C712505C6250068933B /* CSBCaptureDetailTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2C702505C6250068933B /* CSBCaptureDetailTabBarController.swift */; };
-		86DC2C732505D3D20068933B /* CBSHttpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2C722505D3D20068933B /* CBSHttpModel.swift */; };
-		86DC2C752505D7180068933B /* CBSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2C742505D7180068933B /* CBSHelper.swift */; };
+		86DC2C732505D3D20068933B /* CSBHttpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2C722505D3D20068933B /* CSBHttpModel.swift */; };
+		86DC2C752505D7180068933B /* CSBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2C742505D7180068933B /* CSBHelper.swift */; };
 		86DC2CE22508C5A40068933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2CE12508C5A40068933B /* AppDelegate.swift */; };
 		86DC2CE42508C5A40068933B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2CE32508C5A40068933B /* ViewController.swift */; };
 		86DC2CE72508C5A40068933B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DC2CE52508C5A40068933B /* Main.storyboard */; };
@@ -28,8 +28,12 @@
 		86DC2CF72508C5A50068933B /* demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2CF62508C5A50068933B /* demoTests.swift */; };
 		86DC2D022508C5A50068933B /* demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D012508C5A50068933B /* demoUITests.swift */; };
 		86DC2D0E2508C5D50068933B /* CSBNetWorkCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DC2C452505B69C0068933B /* CSBNetWorkCapture.framework */; };
-		86DC2D10250C57440068933B /* CBSNotTouchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D0F250C57440068933B /* CBSNotTouchedView.swift */; };
-		86DC2D12250C67120068933B /* CBSNotTouchedWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D11250C67120068933B /* CBSNotTouchedWindow.swift */; };
+		86DC2D10250C57440068933B /* CSBNotTouchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D0F250C57440068933B /* CSBNotTouchedView.swift */; };
+		86DC2D12250C67120068933B /* CSBNotTouchedWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D11250C67120068933B /* CSBNotTouchedWindow.swift */; };
+		86DC2D14250DBA600068933B /* CSBCaptureDetailBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D13250DBA600068933B /* CSBCaptureDetailBaseViewController.swift */; };
+		86DC2D16250DBA760068933B /* CSBCaptureDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D15250DBA760068933B /* CSBCaptureDetailInfoViewController.swift */; };
+		86DC2D18250DBA8E0068933B /* CSBCaptureDetailRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D17250DBA8E0068933B /* CSBCaptureDetailRequestViewController.swift */; };
+		86DC2D1C250DBB570068933B /* CSBCaptureDetailResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D1B250DBB570068933B /* CSBCaptureDetailResponseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +75,8 @@
 		86DC2C692505BC700068933B /* CSBCaptureRequestsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSBCaptureRequestsCell.xib; sourceTree = "<group>"; };
 		86DC2C6E2505C5880068933B /* CSBCaptureRequestsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBCaptureRequestsListViewController.swift; sourceTree = "<group>"; };
 		86DC2C702505C6250068933B /* CSBCaptureDetailTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBCaptureDetailTabBarController.swift; sourceTree = "<group>"; };
-		86DC2C722505D3D20068933B /* CBSHttpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBSHttpModel.swift; sourceTree = "<group>"; };
-		86DC2C742505D7180068933B /* CBSHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBSHelper.swift; sourceTree = "<group>"; };
+		86DC2C722505D3D20068933B /* CSBHttpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBHttpModel.swift; sourceTree = "<group>"; };
+		86DC2C742505D7180068933B /* CSBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBHelper.swift; sourceTree = "<group>"; };
 		86DC2CDF2508C5A40068933B /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DC2CE12508C5A40068933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86DC2CE32508C5A40068933B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,8 +90,13 @@
 		86DC2CFD2508C5A50068933B /* demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DC2D012508C5A50068933B /* demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoUITests.swift; sourceTree = "<group>"; };
 		86DC2D032508C5A50068933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86DC2D0F250C57440068933B /* CBSNotTouchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBSNotTouchedView.swift; sourceTree = "<group>"; };
-		86DC2D11250C67120068933B /* CBSNotTouchedWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBSNotTouchedWindow.swift; sourceTree = "<group>"; };
+		86DC2D0F250C57440068933B /* CSBNotTouchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBNotTouchedView.swift; sourceTree = "<group>"; };
+		86DC2D11250C67120068933B /* CSBNotTouchedWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBNotTouchedWindow.swift; sourceTree = "<group>"; };
+		86DC2D13250DBA600068933B /* CSBCaptureDetailBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBCaptureDetailBaseViewController.swift; sourceTree = "<group>"; };
+		86DC2D15250DBA760068933B /* CSBCaptureDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBCaptureDetailInfoViewController.swift; sourceTree = "<group>"; };
+		86DC2D17250DBA8E0068933B /* CSBCaptureDetailRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBCaptureDetailRequestViewController.swift; sourceTree = "<group>"; };
+		86DC2D1B250DBB570068933B /* CSBCaptureDetailResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBCaptureDetailResponseViewController.swift; sourceTree = "<group>"; };
+		86FF3248250F2A470029B878 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,10 +195,14 @@
 				86DC2C692505BC700068933B /* CSBCaptureRequestsCell.xib */,
 				86DC2C6E2505C5880068933B /* CSBCaptureRequestsListViewController.swift */,
 				86DC2C702505C6250068933B /* CSBCaptureDetailTabBarController.swift */,
-				86DC2C722505D3D20068933B /* CBSHttpModel.swift */,
-				86DC2C742505D7180068933B /* CBSHelper.swift */,
-				86DC2D0F250C57440068933B /* CBSNotTouchedView.swift */,
-				86DC2D11250C67120068933B /* CBSNotTouchedWindow.swift */,
+				86DC2C722505D3D20068933B /* CSBHttpModel.swift */,
+				86DC2C742505D7180068933B /* CSBHelper.swift */,
+				86DC2D0F250C57440068933B /* CSBNotTouchedView.swift */,
+				86DC2D11250C67120068933B /* CSBNotTouchedWindow.swift */,
+				86DC2D13250DBA600068933B /* CSBCaptureDetailBaseViewController.swift */,
+				86DC2D15250DBA760068933B /* CSBCaptureDetailInfoViewController.swift */,
+				86DC2D17250DBA8E0068933B /* CSBCaptureDetailRequestViewController.swift */,
+				86DC2D1B250DBB570068933B /* CSBCaptureDetailResponseViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -228,6 +241,7 @@
 		86DC2D0D2508C5D50068933B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86FF3248250F2A470029B878 /* libxml2.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -441,12 +455,16 @@
 			files = (
 				86DC2C6F2505C5880068933B /* CSBCaptureRequestsListViewController.swift in Sources */,
 				86DC2C672505B9BA0068933B /* CSBCaptureMainViewController.swift in Sources */,
-				86DC2D10250C57440068933B /* CBSNotTouchedView.swift in Sources */,
-				86DC2D12250C67120068933B /* CBSNotTouchedWindow.swift in Sources */,
-				86DC2C752505D7180068933B /* CBSHelper.swift in Sources */,
+				86DC2D10250C57440068933B /* CSBNotTouchedView.swift in Sources */,
+				86DC2D12250C67120068933B /* CSBNotTouchedWindow.swift in Sources */,
+				86DC2D18250DBA8E0068933B /* CSBCaptureDetailRequestViewController.swift in Sources */,
+				86DC2C752505D7180068933B /* CSBHelper.swift in Sources */,
+				86DC2D1C250DBB570068933B /* CSBCaptureDetailResponseViewController.swift in Sources */,
 				86DC2C712505C6250068933B /* CSBCaptureDetailTabBarController.swift in Sources */,
 				86DC2C622505B86A0068933B /* CSBCapture.swift in Sources */,
-				86DC2C732505D3D20068933B /* CBSHttpModel.swift in Sources */,
+				86DC2D16250DBA760068933B /* CSBCaptureDetailInfoViewController.swift in Sources */,
+				86DC2C732505D3D20068933B /* CSBHttpModel.swift in Sources */,
+				86DC2D14250DBA600068933B /* CSBCaptureDetailBaseViewController.swift in Sources */,
 				86DC2C632505B86A0068933B /* CSBCaptureProtocol.swift in Sources */,
 				86DC2C6A2505BC700068933B /* CSBCaptureRequestsCell.swift in Sources */,
 			);
@@ -647,13 +665,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CSBNetWorkCapture/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sample.com.CSBNetWorkCapture;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -667,13 +688,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CSBNetWorkCapture/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sample.com.CSBNetWorkCapture;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

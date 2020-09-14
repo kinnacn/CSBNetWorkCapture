@@ -8,12 +8,20 @@
 
 import UIKit
 
-class CBSHttpModelManager: NSObject {
-    static let shared = CBSHttpModelManager()
-    private var models = [CBSHttpModel]()
+enum CSBHttpContentType: String {
+    case json = "application/json"
+    case xml = "application/xml"
+    case html = "text/html"
+    case jpge = "image/jpeg"
+    case png = "image/png"
+}
+
+class CSBHttpModelManager: NSObject {
+    static let shared = CSBHttpModelManager()
+    private var models = [CSBHttpModel]()
     private let syncQueue = DispatchQueue(label: "CSBSyncQueue")
     
-    func add(_ obj: CBSHttpModel) {
+    func add(_ obj: CSBHttpModel) {
         syncQueue.async {
             self.models.insert(obj, at: 0)
             NotificationCenter.default.post(name: NSNotification.Name.CBSAddHttpModel, object: nil)
@@ -27,12 +35,12 @@ class CBSHttpModelManager: NSObject {
         }
     }
     
-    func getModels() -> [CBSHttpModel] {
+    func getModels() -> [CSBHttpModel] {
         return models
     }
 }
 
-class CBSHttpModel: NSObject {
+class CSBHttpModel: NSObject {
     var requestURL: String?
     var requestURLComponents: URLComponents?
     var requestURLQueryItems: [URLQueryItem]?
@@ -71,10 +79,8 @@ class CBSHttpModel: NSObject {
         self.requestHeaders = request.allHTTPHeaderFields
         self.requestType = requestHeaders?["Content-Type"] as! String?
         
-        if let bodyData = request.httpBody {
-            self.requestBodyLength = bodyData.count
-        }
-        self.requestBodyData = request.httpBody
+        self.requestBodyLength = request.httpBodyStream?.readfullyData().count
+        self.requestBodyData = request.httpBodyStream?.readfullyData()
     }
     
     func setResponseInfo(_ response: URLResponse, data: Data, error: Error?)
@@ -86,8 +92,8 @@ class CBSHttpModel: NSObject {
         if let headers = self.responseHeaders, let contentType = headers["Content-Type"] as? String {
             self.responseType = contentType.components(separatedBy: ";")[0]
         }
-        self.requestBodyLength = data.count
-        self.requestBodyData = data
+        self.responseBodyLength = data.count
+        self.responseBodyData = data
         
         self.progressTimeInterval = Float(self.responseDate!.timeIntervalSince(self.requestDate!))
     }

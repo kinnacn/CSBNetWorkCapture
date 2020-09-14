@@ -12,7 +12,7 @@ open class CSBCapture: NSObject {
     open static let shared = CSBCapture()
     private var rootViewControllerObservationTimer: Timer?
     private var csbCaptureMainViewController: CSBCaptureMainViewController?
-    private var csbCaptureWindow: CBSNotTouchedWindow?
+    private var csbCaptureWindow: CSBNotTouchedWindow?
     
     private override init() {}
     
@@ -74,7 +74,7 @@ extension CSBCapture {
         if csbCaptureWindow != nil {
             csbCaptureWindow?.isHidden = true
         } else {
-            let newWindow = CBSNotTouchedWindow(frame: UIScreen.main.bounds)
+            let newWindow = CSBNotTouchedWindow(frame: UIScreen.main.bounds)
             let mainViewController = crateMainViewController()
             newWindow.rootViewController = mainViewController
             newWindow.makeKeyAndVisible()
