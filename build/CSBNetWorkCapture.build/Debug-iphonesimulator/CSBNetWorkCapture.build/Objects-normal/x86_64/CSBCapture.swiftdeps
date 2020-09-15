@@ -1,0 +1,610 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CSBCapture"
+provides-nominal:
+- "17CSBNetWorkCapture10CSBCaptureC"
+provides-member:
+- ["17CSBNetWorkCapture10CSBCaptureC", ""]
+provides-dynamic-lookup:
+- "timerUpdate"
+depends-top-level:
+- !private "!="
+- !private "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "Bundle"
+- "CSBCapture"
+- "CSBCaptureMainViewController"
+- !private "CSBCaptureProtocol"
+- "CSBNotTouchedWindow"
+- !private "CastingPrecedence"
+- "NSObject"
+- !private "StringLiteralType"
+- "Timer"
+- !private "UIApplication"
+- !private "UIScreen"
+- !private "UIStoryboard"
+- !private "URLProtocol"
+- !private "URLSessionConfiguration"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So6BundleC", "init"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "isHidden"]
+- !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
+- !private ["So15CALayerDelegateP", "rootViewController"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "Bundle"]
+- ["17CSBNetWorkCapture10CSBCaptureC", "CSBCapture"]
+- ["17CSBNetWorkCapture10CSBCaptureC", "CSBCaptureMainViewController"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "CSBCaptureProtocol"]
+- ["17CSBNetWorkCapture10CSBCaptureC", "CSBNotTouchedWindow"]
+- ["17CSBNetWorkCapture10CSBCaptureC", "Timer"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "UIApplication"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "UIScreen"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "UIStoryboard"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "URLProtocol"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "URLSessionConfiguration"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "crateMainViewController"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "csbCaptureMainViewController"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "csbCaptureWindow"]
+- ["17CSBNetWorkCapture10CSBCaptureC", "deinit"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "hiddenCaptureWindow"]
+- ["17CSBNetWorkCapture10CSBCaptureC", "init"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "registerCSBCaptureProtocol"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "rootViewControllerObservationTimer"]
+- ["17CSBNetWorkCapture10CSBCaptureC", "shared"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "showCaptureWindow"]
+- ["17CSBNetWorkCapture10CSBCaptureC", "startCpature"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "startRootViewControllerObservation"]
+- ["17CSBNetWorkCapture10CSBCaptureC", "stopCpature"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "stopRootViewControllerObservation"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "timerUpdate"]
+- !private ["17CSBNetWorkCapture10CSBCaptureC", "unregisterCSBCaptureProtocol"]
+- !private ["17CSBNetWorkCapture28CSBCaptureMainViewControllerC", "className"]
+- !private ["17CSBNetWorkCapture19CSBNotTouchedWindowC", "deinit"]
+- !private ["17CSBNetWorkCapture19CSBNotTouchedWindowC", "init"]
+- !private ["17CSBNetWorkCapture19CSBNotTouchedWindowC", "isHidden"]
+- !private ["17CSBNetWorkCapture19CSBNotTouchedWindowC", "makeKeyAndVisible"]
+- !private ["17CSBNetWorkCapture19CSBNotTouchedWindowC", "rootViewController"]
+- !private ["s7CVarArgP", "Bundle"]
+- ["s7CVarArgP", "CSBCapture"]
+- !private ["s7CVarArgP", "CSBCaptureMainViewController"]
+- !private ["s7CVarArgP", "CSBCaptureProtocol"]
+- !private ["s7CVarArgP", "CSBNotTouchedWindow"]
+- !private ["s7CVarArgP", "Timer"]
+- !private ["s7CVarArgP", "UIApplication"]
+- !private ["s7CVarArgP", "UIScreen"]
+- !private ["s7CVarArgP", "UIStoryboard"]
+- !private ["s7CVarArgP", "URLProtocol"]
+- !private ["s7CVarArgP", "URLSessionConfiguration"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "className"]
+- !private ["s7CVarArgP", "crateMainViewController"]
+- !private ["s7CVarArgP", "csbCaptureWindow"]
+- !private ["s7CVarArgP", "hiddenCaptureWindow"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "invalidate"]
+- !private ["s7CVarArgP", "isHidden"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "makeKeyAndVisible"]
+- !private ["s7CVarArgP", "registerCSBCaptureProtocol"]
+- !private ["s7CVarArgP", "registerClass"]
+- !private ["s7CVarArgP", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["s7CVarArgP", "rootViewController"]
+- !private ["s7CVarArgP", "rootViewControllerObservationTimer"]
+- !private ["s7CVarArgP", "scheduledTimer"]
+- !private ["s7CVarArgP", "setupCSBCaptureDefaultSessionConfiguration"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "showCaptureWindow"]
+- !private ["s7CVarArgP", "startRootViewControllerObservation"]
+- !private ["s7CVarArgP", "stopRootViewControllerObservation"]
+- !private ["s7CVarArgP", "timerUpdate"]
+- !private ["s7CVarArgP", "topViewController"]
+- !private ["s7CVarArgP", "unregisterCSBCaptureProtocol"]
+- !private ["s7CVarArgP", "unregisterClass"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- ["s28CustomDebugStringConvertibleP", "CSBCapture"]
+- !private ["s28CustomDebugStringConvertibleP", "CSBCaptureMainViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "CSBCaptureProtocol"]
+- !private ["s28CustomDebugStringConvertibleP", "CSBNotTouchedWindow"]
+- !private ["s28CustomDebugStringConvertibleP", "Timer"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
+- !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
+- !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
+- !private ["s28CustomDebugStringConvertibleP", "URLProtocol"]
+- !private ["s28CustomDebugStringConvertibleP", "URLSessionConfiguration"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "className"]
+- !private ["s28CustomDebugStringConvertibleP", "crateMainViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "csbCaptureWindow"]
+- !private ["s28CustomDebugStringConvertibleP", "hiddenCaptureWindow"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "invalidate"]
+- !private ["s28CustomDebugStringConvertibleP", "isHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
+- !private ["s28CustomDebugStringConvertibleP", "registerCSBCaptureProtocol"]
+- !private ["s28CustomDebugStringConvertibleP", "registerClass"]
+- !private ["s28CustomDebugStringConvertibleP", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "rootViewControllerObservationTimer"]
+- !private ["s28CustomDebugStringConvertibleP", "scheduledTimer"]
+- !private ["s28CustomDebugStringConvertibleP", "setupCSBCaptureDefaultSessionConfiguration"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "showCaptureWindow"]
+- !private ["s28CustomDebugStringConvertibleP", "startRootViewControllerObservation"]
+- !private ["s28CustomDebugStringConvertibleP", "stopRootViewControllerObservation"]
+- !private ["s28CustomDebugStringConvertibleP", "timerUpdate"]
+- !private ["s28CustomDebugStringConvertibleP", "topViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "unregisterCSBCaptureProtocol"]
+- !private ["s28CustomDebugStringConvertibleP", "unregisterClass"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Bundle"]
+- ["s23CustomStringConvertibleP", "CSBCapture"]
+- !private ["s23CustomStringConvertibleP", "CSBCaptureMainViewController"]
+- !private ["s23CustomStringConvertibleP", "CSBCaptureProtocol"]
+- !private ["s23CustomStringConvertibleP", "CSBNotTouchedWindow"]
+- !private ["s23CustomStringConvertibleP", "Timer"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
+- !private ["s23CustomStringConvertibleP", "UIScreen"]
+- !private ["s23CustomStringConvertibleP", "UIStoryboard"]
+- !private ["s23CustomStringConvertibleP", "URLProtocol"]
+- !private ["s23CustomStringConvertibleP", "URLSessionConfiguration"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "className"]
+- !private ["s23CustomStringConvertibleP", "crateMainViewController"]
+- !private ["s23CustomStringConvertibleP", "csbCaptureWindow"]
+- !private ["s23CustomStringConvertibleP", "hiddenCaptureWindow"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "invalidate"]
+- !private ["s23CustomStringConvertibleP", "isHidden"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
+- !private ["s23CustomStringConvertibleP", "registerCSBCaptureProtocol"]
+- !private ["s23CustomStringConvertibleP", "registerClass"]
+- !private ["s23CustomStringConvertibleP", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["s23CustomStringConvertibleP", "rootViewController"]
+- !private ["s23CustomStringConvertibleP", "rootViewControllerObservationTimer"]
+- !private ["s23CustomStringConvertibleP", "scheduledTimer"]
+- !private ["s23CustomStringConvertibleP", "setupCSBCaptureDefaultSessionConfiguration"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "showCaptureWindow"]
+- !private ["s23CustomStringConvertibleP", "startRootViewControllerObservation"]
+- !private ["s23CustomStringConvertibleP", "stopRootViewControllerObservation"]
+- !private ["s23CustomStringConvertibleP", "timerUpdate"]
+- !private ["s23CustomStringConvertibleP", "topViewController"]
+- !private ["s23CustomStringConvertibleP", "unregisterCSBCaptureProtocol"]
+- !private ["s23CustomStringConvertibleP", "unregisterClass"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Bundle"]
+- ["s9EquatableP", "CSBCapture"]
+- !private ["s9EquatableP", "CSBCaptureMainViewController"]
+- !private ["s9EquatableP", "CSBCaptureProtocol"]
+- !private ["s9EquatableP", "CSBNotTouchedWindow"]
+- !private ["s9EquatableP", "Timer"]
+- !private ["s9EquatableP", "UIApplication"]
+- !private ["s9EquatableP", "UIScreen"]
+- !private ["s9EquatableP", "UIStoryboard"]
+- !private ["s9EquatableP", "URLProtocol"]
+- !private ["s9EquatableP", "URLSessionConfiguration"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "className"]
+- !private ["s9EquatableP", "crateMainViewController"]
+- !private ["s9EquatableP", "csbCaptureWindow"]
+- !private ["s9EquatableP", "hiddenCaptureWindow"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "instantiateViewController"]
+- !private ["s9EquatableP", "invalidate"]
+- !private ["s9EquatableP", "isHidden"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "makeKeyAndVisible"]
+- !private ["s9EquatableP", "registerCSBCaptureProtocol"]
+- !private ["s9EquatableP", "registerClass"]
+- !private ["s9EquatableP", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["s9EquatableP", "rootViewController"]
+- !private ["s9EquatableP", "rootViewControllerObservationTimer"]
+- !private ["s9EquatableP", "scheduledTimer"]
+- !private ["s9EquatableP", "setupCSBCaptureDefaultSessionConfiguration"]
+- !private ["s9EquatableP", "shared"]
+- !private ["s9EquatableP", "showCaptureWindow"]
+- !private ["s9EquatableP", "startRootViewControllerObservation"]
+- !private ["s9EquatableP", "stopRootViewControllerObservation"]
+- !private ["s9EquatableP", "timerUpdate"]
+- !private ["s9EquatableP", "topViewController"]
+- !private ["s9EquatableP", "unregisterCSBCaptureProtocol"]
+- !private ["s9EquatableP", "unregisterClass"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Bundle"]
+- ["s8HashableP", "CSBCapture"]
+- !private ["s8HashableP", "CSBCaptureMainViewController"]
+- !private ["s8HashableP", "CSBCaptureProtocol"]
+- !private ["s8HashableP", "CSBNotTouchedWindow"]
+- !private ["s8HashableP", "Timer"]
+- !private ["s8HashableP", "UIApplication"]
+- !private ["s8HashableP", "UIScreen"]
+- !private ["s8HashableP", "UIStoryboard"]
+- !private ["s8HashableP", "URLProtocol"]
+- !private ["s8HashableP", "URLSessionConfiguration"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "className"]
+- !private ["s8HashableP", "crateMainViewController"]
+- !private ["s8HashableP", "csbCaptureWindow"]
+- !private ["s8HashableP", "hiddenCaptureWindow"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "instantiateViewController"]
+- !private ["s8HashableP", "invalidate"]
+- !private ["s8HashableP", "isHidden"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "makeKeyAndVisible"]
+- !private ["s8HashableP", "registerCSBCaptureProtocol"]
+- !private ["s8HashableP", "registerClass"]
+- !private ["s8HashableP", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["s8HashableP", "rootViewController"]
+- !private ["s8HashableP", "rootViewControllerObservationTimer"]
+- !private ["s8HashableP", "scheduledTimer"]
+- !private ["s8HashableP", "setupCSBCaptureDefaultSessionConfiguration"]
+- !private ["s8HashableP", "shared"]
+- !private ["s8HashableP", "showCaptureWindow"]
+- !private ["s8HashableP", "startRootViewControllerObservation"]
+- !private ["s8HashableP", "stopRootViewControllerObservation"]
+- !private ["s8HashableP", "timerUpdate"]
+- !private ["s8HashableP", "topViewController"]
+- !private ["s8HashableP", "unregisterCSBCaptureProtocol"]
+- !private ["s8HashableP", "unregisterClass"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "className"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isHidden"]
+- !private ["So8NSCodingP", "makeKeyAndVisible"]
+- !private ["So8NSCodingP", "rootViewController"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["So9NSCopyingP", "setupCSBCaptureDefaultSessionConfiguration"]
+- !private ["So26NSExtensionRequestHandlingP", "className"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "Bundle"]
+- ["So8NSObjectC", "CSBCapture"]
+- ["So8NSObjectC", "CSBCaptureMainViewController"]
+- !private ["So8NSObjectC", "CSBCaptureProtocol"]
+- ["So8NSObjectC", "CSBNotTouchedWindow"]
+- ["So8NSObjectC", "Timer"]
+- !private ["So8NSObjectC", "UIApplication"]
+- !private ["So8NSObjectC", "UIScreen"]
+- !private ["So8NSObjectC", "UIStoryboard"]
+- !private ["So8NSObjectC", "URLProtocol"]
+- !private ["So8NSObjectC", "URLSessionConfiguration"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "className"]
+- ["So8NSObjectC", "crateMainViewController"]
+- ["So8NSObjectC", "csbCaptureMainViewController"]
+- ["So8NSObjectC", "csbCaptureWindow"]
+- ["So8NSObjectC", "hiddenCaptureWindow"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "invalidate"]
+- !private ["So8NSObjectC", "isHidden"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "makeKeyAndVisible"]
+- ["So8NSObjectC", "registerCSBCaptureProtocol"]
+- !private ["So8NSObjectC", "registerClass"]
+- !private ["So8NSObjectC", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["So8NSObjectC", "rootViewController"]
+- ["So8NSObjectC", "rootViewControllerObservationTimer"]
+- !private ["So8NSObjectC", "scheduledTimer"]
+- !private ["So8NSObjectC", "setupCSBCaptureDefaultSessionConfiguration"]
+- ["So8NSObjectC", "shared"]
+- ["So8NSObjectC", "showCaptureWindow"]
+- ["So8NSObjectC", "startCpature"]
+- ["So8NSObjectC", "startRootViewControllerObservation"]
+- ["So8NSObjectC", "stopCpature"]
+- ["So8NSObjectC", "stopRootViewControllerObservation"]
+- ["So8NSObjectC", "timerUpdate"]
+- !private ["So8NSObjectC", "topViewController"]
+- ["So8NSObjectC", "unregisterCSBCaptureProtocol"]
+- !private ["So8NSObjectC", "unregisterClass"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "Bundle"]
+- ["So16NSObjectProtocolP", "CSBCapture"]
+- !private ["So16NSObjectProtocolP", "CSBCaptureMainViewController"]
+- !private ["So16NSObjectProtocolP", "CSBCaptureProtocol"]
+- !private ["So16NSObjectProtocolP", "CSBNotTouchedWindow"]
+- !private ["So16NSObjectProtocolP", "Timer"]
+- !private ["So16NSObjectProtocolP", "UIApplication"]
+- !private ["So16NSObjectProtocolP", "UIScreen"]
+- !private ["So16NSObjectProtocolP", "UIStoryboard"]
+- !private ["So16NSObjectProtocolP", "URLProtocol"]
+- !private ["So16NSObjectProtocolP", "URLSessionConfiguration"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "className"]
+- !private ["So16NSObjectProtocolP", "crateMainViewController"]
+- !private ["So16NSObjectProtocolP", "csbCaptureWindow"]
+- !private ["So16NSObjectProtocolP", "hiddenCaptureWindow"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- !private ["So16NSObjectProtocolP", "invalidate"]
+- !private ["So16NSObjectProtocolP", "isHidden"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "makeKeyAndVisible"]
+- !private ["So16NSObjectProtocolP", "registerCSBCaptureProtocol"]
+- !private ["So16NSObjectProtocolP", "registerClass"]
+- !private ["So16NSObjectProtocolP", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["So16NSObjectProtocolP", "rootViewController"]
+- !private ["So16NSObjectProtocolP", "rootViewControllerObservationTimer"]
+- !private ["So16NSObjectProtocolP", "scheduledTimer"]
+- !private ["So16NSObjectProtocolP", "setupCSBCaptureDefaultSessionConfiguration"]
+- !private ["So16NSObjectProtocolP", "shared"]
+- !private ["So16NSObjectProtocolP", "showCaptureWindow"]
+- !private ["So16NSObjectProtocolP", "startRootViewControllerObservation"]
+- !private ["So16NSObjectProtocolP", "stopRootViewControllerObservation"]
+- !private ["So16NSObjectProtocolP", "timerUpdate"]
+- !private ["So16NSObjectProtocolP", "topViewController"]
+- !private ["So16NSObjectProtocolP", "unregisterCSBCaptureProtocol"]
+- !private ["So16NSObjectProtocolP", "unregisterClass"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So5TimerC", "invalidate"]
+- !private ["So5TimerC", "scheduledTimer"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "isHidden"]
+- !private ["So29UIAccessibilityIdentificationP", "makeKeyAndVisible"]
+- !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "isHidden"]
+- !private ["So12UIAppearanceP", "makeKeyAndVisible"]
+- !private ["So12UIAppearanceP", "rootViewController"]
+- !private ["So21UIAppearanceContainerP", "className"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isHidden"]
+- !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
+- !private ["So21UIAppearanceContainerP", "rootViewController"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So13UIApplicationC", "topViewController"]
+- !private ["So18UIContentContainerP", "className"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "isHidden"]
+- !private ["So17UICoordinateSpaceP", "makeKeyAndVisible"]
+- !private ["So17UICoordinateSpaceP", "rootViewController"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "isHidden"]
+- !private ["So13UIDynamicItemP", "makeKeyAndVisible"]
+- !private ["So13UIDynamicItemP", "rootViewController"]
+- !private ["So18UIFocusEnvironmentP", "className"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isHidden"]
+- !private ["So18UIFocusEnvironmentP", "makeKeyAndVisible"]
+- !private ["So18UIFocusEnvironmentP", "rootViewController"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "isHidden"]
+- !private ["So11UIFocusItemP", "makeKeyAndVisible"]
+- !private ["So11UIFocusItemP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "className"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
+- !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "topViewController"]
+- !private ["So11UIResponderC", "className"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isHidden"]
+- !private ["So11UIResponderC", "makeKeyAndVisible"]
+- !private ["So11UIResponderC", "rootViewController"]
+- !private ["So11UIResponderC", "shared"]
+- !private ["So11UIResponderC", "topViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "className"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "makeKeyAndVisible"]
+- !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "topViewController"]
+- !private ["So8UIScreenC", "bounds"]
+- !private ["So8UIScreenC", "main"]
+- !private ["So16UIStateRestoringP", "className"]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "className"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isHidden"]
+- !private ["So18UITraitEnvironmentP", "main"]
+- !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
+- !private ["So18UITraitEnvironmentP", "rootViewController"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "isHidden"]
+- !private ["So6UIViewC", "makeKeyAndVisible"]
+- !private ["So6UIViewC", "rootViewController"]
+- !private ["So16UIViewControllerC", "className"]
+- !private ["So8UIWindowC", "init"]
+- !private ["So8UIWindowC", "isHidden"]
+- !private ["So8UIWindowC", "makeKeyAndVisible"]
+- !private ["So8UIWindowC", "rootViewController"]
+- !private ["So11URLProtocolC", "registerClass"]
+- !private ["So11URLProtocolC", "unregisterClass"]
+- !private ["So23URLSessionConfigurationC", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["So23URLSessionConfigurationC", "setupCSBCaptureDefaultSessionConfiguration"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "makeKeyAndVisible"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "CSBCapture"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CSBCaptureMainViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CSBCaptureProtocol"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CSBNotTouchedWindow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Timer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URLProtocol"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URLSessionConfiguration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "className"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "crateMainViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "csbCaptureWindow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hiddenCaptureWindow"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "invalidate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "registerCSBCaptureProtocol"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "registerClass"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "releseCSBCaptureDefaultSessionConfiguration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewControllerObservationTimer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduledTimer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setupCSBCaptureDefaultSessionConfiguration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showCaptureWindow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startRootViewControllerObservation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stopRootViewControllerObservation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timerUpdate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "topViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unregisterCSBCaptureProtocol"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unregisterClass"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So6BundleC"
+- !private "So15CALayerDelegateP"
+- "17CSBNetWorkCapture10CSBCaptureC"
+- !private "17CSBNetWorkCapture28CSBCaptureMainViewControllerC"
+- !private "17CSBNetWorkCapture19CSBNotTouchedWindowC"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So5TimerC"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So13UIApplicationC"
+- !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So8UIScreenC"
+- !private "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "So16UIViewControllerC"
+- !private "So8UIWindowC"
+- !private "So11URLProtocolC"
+- !private "So23URLSessionConfigurationC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/CSBNetWorkCapture.h"
+- "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/build/CSBNetWorkCapture.build/Debug-iphonesimulator/CSBNetWorkCapture.build/unextended-module.modulemap"
+interface-hash: "6ad0a9bcbc6b5e3c42328bdfaa1084fe"

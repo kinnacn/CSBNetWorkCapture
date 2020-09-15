@@ -6,7 +6,22 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		862BDEF9251038CC00003159 /* Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 862BDEFC251038CC00003159 /* Build configuration list for PBXAggregateTarget "Universal" */;
+			buildPhases = (
+				862BDEFD251038D300003159 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Universal;
+			productName = Universal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		862BDF0125103F9900003159 /* CSBNetWorkCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862BDF0025103F9900003159 /* CSBNetWorkCapture.framework */; };
 		86DC2C4F2505B69C0068933B /* CSBNetWorkCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DC2C452505B69C0068933B /* CSBNetWorkCapture.framework */; };
 		86DC2C542505B69C0068933B /* CSBNetWorkCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2C532505B69C0068933B /* CSBNetWorkCaptureTests.swift */; };
 		86DC2C562505B69C0068933B /* CSBNetWorkCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 86DC2C482505B69C0068933B /* CSBNetWorkCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,7 +42,6 @@
 		86DC2CEC2508C5A40068933B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DC2CEA2508C5A40068933B /* LaunchScreen.storyboard */; };
 		86DC2CF72508C5A50068933B /* demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2CF62508C5A50068933B /* demoTests.swift */; };
 		86DC2D022508C5A50068933B /* demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D012508C5A50068933B /* demoUITests.swift */; };
-		86DC2D0E2508C5D50068933B /* CSBNetWorkCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DC2C452505B69C0068933B /* CSBNetWorkCapture.framework */; };
 		86DC2D10250C57440068933B /* CSBNotTouchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D0F250C57440068933B /* CSBNotTouchedView.swift */; };
 		86DC2D12250C67120068933B /* CSBNotTouchedWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D11250C67120068933B /* CSBNotTouchedWindow.swift */; };
 		86DC2D14250DBA600068933B /* CSBCaptureDetailBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC2D13250DBA600068933B /* CSBCaptureDetailBaseViewController.swift */; };
@@ -61,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		862BDF0025103F9900003159 /* CSBNetWorkCapture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CSBNetWorkCapture.framework; sourceTree = "<group>"; };
 		86DC2C452505B69C0068933B /* CSBNetWorkCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSBNetWorkCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DC2C482505B69C0068933B /* CSBNetWorkCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSBNetWorkCapture.h; sourceTree = "<group>"; };
 		86DC2C492505B69C0068933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86DC2D0E2508C5D50068933B /* CSBNetWorkCapture.framework in Frameworks */,
+				862BDF0125103F9900003159 /* CSBNetWorkCapture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +256,7 @@
 		86DC2D0D2508C5D50068933B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				862BDF0025103F9900003159 /* CSBNetWorkCapture.framework */,
 				86FF3248250F2A470029B878 /* libxml2.tbd */,
 			);
 			name = Frameworks;
@@ -359,6 +375,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = seibin;
 				TargetAttributes = {
+					862BDEF9251038CC00003159 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					86DC2C442505B69C0068933B = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -398,6 +418,7 @@
 			targets = (
 				86DC2C442505B69C0068933B /* CSBNetWorkCapture */,
 				86DC2C4D2505B69C0068933B /* CSBNetWorkCaptureTests */,
+				862BDEF9251038CC00003159 /* Universal */,
 				86DC2CDE2508C5A40068933B /* demo */,
 				86DC2CF12508C5A40068933B /* demoTests */,
 				86DC2CFC2508C5A50068933B /* demoUITests */,
@@ -447,6 +468,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		862BDEFD251038D300003159 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86DC2C402505B69C0068933B /* Sources */ = {
@@ -543,6 +580,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		862BDEFA251038CC00003159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		862BDEFB251038CC00003159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		86DC2C572505B69C0068933B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -735,6 +788,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sample.com.demo;
@@ -749,6 +806,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sample.com.demo;
@@ -823,6 +884,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		862BDEFC251038CC00003159 /* Build configuration list for PBXAggregateTarget "Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862BDEFA251038CC00003159 /* Debug */,
+				862BDEFB251038CC00003159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		86DC2C3F2505B69C0068933B /* Build configuration list for PBXProject "CSBNetWorkCapture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

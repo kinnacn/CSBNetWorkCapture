@@ -16,6 +16,8 @@ class CSBCaptureRequestsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "NetWorkCaptures"
+        
         navigationController?.navigationBar.barTintColor = .black
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.titleTextAttributes = [

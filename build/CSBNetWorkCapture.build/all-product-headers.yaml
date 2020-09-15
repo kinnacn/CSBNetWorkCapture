@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/abin/Library/Developer/Xcode/DerivedData/CSBNetWorkCapture-aoxbdmrtoytwljabdbqyqrlybbwl/Build/Products/Debug-iphonesimulator/CSBNetWorkCapture.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CSBNetWorkCapture-Swift.h",
+          'external-contents': "/Users/abin/Library/Developer/Xcode/DerivedData/CSBNetWorkCapture-aoxbdmrtoytwljabdbqyqrlybbwl/Build/Products/Debug-iphonesimulator/CSBNetWorkCapture.framework/Headers/CSBNetWorkCapture-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CSBNetWorkCapture.h",
+          'external-contents': "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/CSBNetWorkCapture.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/abin/Library/Developer/Xcode/DerivedData/CSBNetWorkCapture-aoxbdmrtoytwljabdbqyqrlybbwl/Build/Products/Debug-iphonesimulator/CSBNetWorkCapture.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/build/CSBNetWorkCapture.build/Debug-iphonesimulator/CSBNetWorkCapture.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

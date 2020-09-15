@@ -1,0 +1,11 @@
+framework module CSBNetWorkCapture {
+  umbrella header "CSBNetWorkCapture.h"
+
+  export *
+  module * { export * }
+}
+
+module CSBNetWorkCapture.Swift {
+    header "CSBNetWorkCapture-Swift.h"
+    requires objc
+}

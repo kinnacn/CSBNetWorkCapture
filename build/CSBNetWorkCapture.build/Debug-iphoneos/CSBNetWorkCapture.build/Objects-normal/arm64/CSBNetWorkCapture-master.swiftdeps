@@ -1,0 +1,18 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "d2e5b869d3071803da8eb9d1864d9b70"
+build_time: [1600127816, 765823000]
+inputs:
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCaptureRequestsListViewController.swift": [1600062267, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCaptureMainViewController.swift": [1600061847, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBNotTouchedView.swift": [1600062284, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBNotTouchedWindow.swift": [1600062309, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCaptureDetailRequestViewController.swift": [1600062267, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBHelper.swift": [1600055297, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCaptureDetailResponseViewController.swift": [1600062344, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCaptureDetailTabBarController.swift": [1600062267, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCapture.swift": [1600062303, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCaptureDetailInfoViewController.swift": [1600062267, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBHttpModel.swift": [1600062267, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCaptureDetailBaseViewController.swift": [1600062267, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCaptureProtocol.swift": [1600062267, 0]
+  "/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/CSBNetWorkCapture/Core/CSBCaptureRequestsCell.swift": [1600040975, 0]

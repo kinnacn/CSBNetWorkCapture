@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/abin/Library/Developer/Xcode/DerivedData/CSBNetWorkCapture-aoxbdmrtoytwljabdbqyqrlybbwl/Build/Products/Debug-iphonesimulator/CSBNetWorkCapture.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/abin/Desktop/myGitHub/CSBNetWorkCapture/build/CSBNetWorkCapture.build/Debug-iphonesimulator/CSBNetWorkCapture.build/unextended-module.modulemap',
+    }]
+  }]
+}
